@@ -1,0 +1,24 @@
+.awesome__content-box {
+    font-size: 0;
+}
+
+.awesome__card {
+    display: inline-block;
+    text-align: center;
+    width: 33.3%;
+    line-height: 1.5;
+}
+
+.awesome__card-description {
+    /* max-width: 370px; */
+    font-size: 18px;
+    margin-bottom: 20px;
+    font-family: 'Raleway', sans-serif;
+}
+
+.awesome__card-title {
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-family: 'Open Sans', sans-serif;
+}   
+

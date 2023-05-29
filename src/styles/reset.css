@@ -1,0 +1,23 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+html{
+    font-size: 16px;
+}
+
+img{
+    vertical-align: top;
+}
+
+button{
+    background-color: transparent;
+    border: none;
+
+}
+
+ul[class],
+ol[class]{
+    list-style: none;
+}

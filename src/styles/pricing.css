@@ -1,0 +1,66 @@
+.pricing{
+    height: 950px;
+    background: #F5F5F5;
+}
+
+.pricing__header-text {
+    text-align: center;
+    padding-top: 100px;
+}
+
+.pricing__cards-list{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    align-items: end;
+    margin-top: 6rem;
+    height: 580px;
+}
+
+.pricing__cards-title{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    color: #fff;
+    background-color: #333333;
+    padding: 13px;
+    text-align: center;
+}
+
+.pricing__cards-price{
+    font-size: 36px;
+    font-weight: 700;
+    font-family: 'Raleway', sans-serif;
+    color: #fff;
+    background-color: #333333;
+    margin-top: 2px;
+    padding: 35px 170px;
+    text-align: center;
+}
+
+.pricing__cards-description{
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.5);
+    background-color: #333333;
+    padding: 14px;
+    text-align: center;
+    margin-top: 2px;
+}
+
+.pricing__cards-space{
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    color: #86878B;
+    border: 1px solid #F5F5F5;
+    padding: 15px 15px;
+    background: #FFFFFF;
+}
+
+.pricing__card--top{
+    align-self: start;
+    -webkit-box-shadow: 7px 10px 8px 0px rgba(34, 60, 80, 0.2);
+    -moz-box-shadow: 7px 10px 8px 0px rgba(34, 60, 80, 0.2);
+    box-shadow: 7px 10px 8px 0px rgba(34, 60, 80, 0.2);
+}
