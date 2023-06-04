@@ -1,0 +1,48 @@
+
+.customers-section-list {
+    display: flex;
+    column-gap: 2rem;
+    margin-top: 2rem;
+}
+
+.section-item__customers-comment{
+    text-align: center;
+    position: relative;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-size: 1.13rem;
+    padding: 2.3rem 1.5rem;
+    background: #E2E2E2;
+    border-radius: 10px;
+    color: #86878B;
+}
+
+.section-item__customers-comment::after{
+    content: '';
+    position: absolute;
+    left: 20%;
+    top: 100%;
+    width: 0;
+    height: 0;
+    border-left: 1.3rem solid transparent;
+    border-right: 1.3rem solid transparent;
+    border-top: 1.7rem solid #E2E2E2;
+}
+
+.section-item__customer{
+    display: flex;
+    column-gap: 2rem;
+    align-items: flex-start;
+    margin-top: 4rem;
+}
+
+
+.section-item__customer-name{
+    margin-top: 1rem;
+    font-size: 24px;
+}
+
+.section-item__customer-post{
+    font-family: 'Raleway', sans-serif;
+    margin-top: 1.5rem;
+}

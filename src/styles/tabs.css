@@ -1,63 +1,96 @@
-.tabs{
-    padding: 5rem 0;
+
+.tabs {
+	padding: var( --section-padding-top-bottom);
 }
 
-.tabs-button {
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 400;
-    font-size: 0.88rem;
-    color: #333333;
-    text-transform: uppercase;
-    padding: 0.6rem 5rem;
+/* задаем родителю  font-size: 0; что бы убрать отступы у дочерних 
+inline-block элементов */
+/* так же задаем свойство  text-align: justify; которое 
+прижмет дочерние inline-block элементы к левому и правому краю. 
+Но, само по себе оно работать не будет и нам нужно прописать 
+код который ниже через псевдоэлемент ::after */
+
+.tabs__content {
+	font-size: 0;
+	border: 1px solid #c6cbcd;
+	text-align: justify;
+	padding-left: 5rem;
 }
 
-.tabs-button--active{
-    border: 1px solid #C6CBCD;
-    border-bottom: none;
-    border-radius: 5px 5px 0px 0px;
+.tabs__content::after {
+	content: '';
+	display: inline-block;
+	width: 100%;
 }
 
-.tabs__content{
-    display: inline-block;
-    width: 50%;
-    padding: 20px;
-    border-top: 1px solid #c0c0c0;
-    border-bottom: 1px solid #c0c0c0;
-    border-left: 1px solid #c0c0c0;
+.tabs__content-button {
+	text-transform: capitalize;
+	font-size: 1.1rem;
+	color: #fff;
+	background-color: var(--background-color-btn-normal);
+	padding: 1rem 6.5rem;
+	margin-top: 4rem;
 }
 
-.tabs__content-text{
-    vertical-align: top;
-    font-size: 0;
+.tabs__content-description {
+	color: rgb(0 0 0 /1);
+	font-size: 1rem;
+	line-height: 1.5;
+	margin-top: 4rem;
 }
 
-.tabs__content-title{
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 700;
-    font-size: 30px;
-    margin-top: 20px;
+.tabs__content-image {
+	max-width: 100%;
+	height: auto;
 }
 
-.tabs__content-subtitle{
-    font-family: 'Raleway', sans-serif;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 30px;
-    margin-top: 40px;
+.tabs__content-text {
+	display: inline-block;
+	vertical-align: top;
+	width: 50%;
 }
 
-.section-tabs__button{
-    padding: 20px 100px;
-    color: #fff;
-    border: 0;  
-    background-color: #EC7979;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 17px;
-    cursor: pointer;
-    margin-top: 27px;
+.tabs__content-title {
+	font-size: 1.9rem;
+	margin-top: 4rem;
 }
 
-.new-york__image{
-    width: 40%;
-    height: 473px; 
+.tabs__dox {
+	border: none;
+	padding: 0;
+	margin: 0;
+}
+
+.tabs__legend {
+	position: absolute;
+	pointer-events: none;
+	opacity: 0;
+}
+
+.tabs__tab {
+	position: absolute;
+	appearance: none;
+	pointer-events: none;
+}
+
+.tabs__tab-label {
+	display: inline-block;
+	cursor: pointer;
+	height: 3.5rem;
+	width: 9rem;
+	padding-top: 1rem;
+	font-size: 1rem;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+.tabs__tab:checked + .tabs__tab-label {
+	position: relative;
+	top: 2px;
+	z-index: 10;
+	background-color: #fff;
+	border: 1px solid #c6cbcd;
+	border-bottom: none;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
 }

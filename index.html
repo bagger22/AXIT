@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="./src/styles/section-header.css" />
     <link rel="stylesheet" href="./src/styles/awesome.css" />
     <link rel="stylesheet" href="./src/styles/tabs.css" />
+    <link rel="stylesheet" href="./src/styles/customers.css">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -21,35 +22,33 @@
   <body>
     <section class="tabs">
       <div class="container">
-        <div class="tabs-buttons-box">
-          <button class="tabs-button tabs-button--active" type="button">tab1</button>
-          <button class="tabs-button" type="button">tab2</button>
-          <button class="tabs-button" type="button">tab3</button>
-        </div>
+        <fieldset class="tabs__dox">
+          <legend class="tabs__legend">Tabs</legend>
+          <input class="tabs__tab" id="tab_1" type="radio" name="tab" checked />
+          <label class="tabs__tab-label" for="tab_1"> tab 1</label>
+          <input class="tabs__tab" id="tab_2" type="radio" name="tab" />
+          <label class="tabs__tab-label" for="tab_2">
+            tab 2</label>
+          <input class="tabs__tab" id="tab_3" type="radio" name="tab" />
+          <label class="tabs__tab-label" for="tab_3"> tab 3</label>
+        </fieldset>
         <div class="tabs__content">
           <div class="tabs__content-text">
-            <h2 class="tabs__content-title">
-              Tabs with soft transitioning effect.
-            </h2>
-            <p class="tabs__content-subtitle">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
-              euismod<br />
-              bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et
-              viverra<br />
+            <h2 class="tabs__content-title">Tabs with soft transitioning effect.</h2>
+            <p class="tabs__content-description">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod
+              bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra
               justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque
-              penatibus et magnis dis parturient montes.<br />
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean<br />
-              euismod bibendum laoreet.
+              penatibus et magnis dis parturient montes.
+              <br />
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod
+              bibendum laoreet.
             </p>
-            <button class="section-tabs__button" type="button">Download</button>
+            <button class="tabs__content-button" type="button">download</button>
           </div>
+          <img class="tabs__content-image" src="./src/assests/images/statue-of-liberty.png"
+            alt="statue-of-liberty image" />
         </div>
-        <img
-          class="new-york__image"
-          src="./src/assests/images/rectangle.png"
-          alt="new york"
-        />
-      </div>
     </section>
 
     <section class="awesome">
@@ -153,6 +152,74 @@
             <li class="pricing__cards-space">1 Gb Of Space</li>
             <li class="pricing__cards-space">1 Gb Of Space</li>
           </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="customers">
+      <div class="container">
+        <div class="section__header">
+          <h2 class="section-header__title">what our customers are saying</h2>
+          <div class="section-header__line"></div>
+          <p class="section-header__description">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          </p>
+        </div>
+        <div class="customers-section-list">
+          <div class="section-list__item">
+            <p class="section-item__customers-comment">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Doloribus accusamus expedita repellat similique odio aspernatur
+              ex, architecto eaque quo suscipit.
+            </p>
+            <div class="section-item__customer">
+              <img
+                class="section-item__customer-image"
+                src="./src/assests/images/davis-rhiel-madsen.png"
+                alt="Davis Rhiel Madsen"
+              />
+              <div class="section-item__customer-text">
+                <h4 class="section-item__customer-name">Davis Rhiel Madsen</h4>
+                <p class="section-item__customer-post">Manager</p>
+              </div>
+            </div>
+          </div>
+          <div class="section-list__item">
+            <p class="section-item__customers-comment">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Doloribus accusamus expedita repellat similique odio aspernatur
+              ex, architecto eaque quo suscipit.
+            </p>
+            <div class="section-item__customer">
+              <img
+                class="section-item__customer-image"
+                src="./src/assests/images/jaydon-rosser.png"
+                alt="Jaydon Rosser"
+              />
+              <div class="section-item__customer-text">
+                <h4 class="section-item__customer-name">Jaydon Rosser</h4>
+                <p class="section-item__customer-post">Manager</p>
+              </div>
+            </div>
+          </div>
+          <div class="section-list__item">
+            <p class="section-item__customers-comment">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Doloribus accusamus expedita repellat similique odio aspernatur
+              ex, architecto eaque quo suscipit.
+            </p>
+            <div class="section-item__customer">
+              <img
+                class="section-item__customer-image"
+                src="./src/assests/images/cooper-dorwart.png"
+                alt="Cooper Dorwart"
+              />
+              <div class="section-item__customer-text">
+                <h4 class="section-item__customer-name">Cooper Dorwart</h4>
+                <p class="section-item__customer-post">Manager</p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
