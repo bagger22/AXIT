@@ -3,13 +3,6 @@
 	padding: var( --section-padding-top-bottom);
 }
 
-/* задаем родителю  font-size: 0; что бы убрать отступы у дочерних 
-inline-block элементов */
-/* так же задаем свойство  text-align: justify; которое 
-прижмет дочерние inline-block элементы к левому и правому краю. 
-Но, само по себе оно работать не будет и нам нужно прописать 
-код который ниже через псевдоэлемент ::after */
-
 .tabs__content {
 	font-size: 0;
 	border: 1px solid #c6cbcd;
