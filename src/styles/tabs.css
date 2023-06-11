@@ -1,6 +1,7 @@
 
 .tabs {
 	padding: var( --section-padding-top-bottom);
+	margin-top: 150px;
 }
 
 .tabs__content {
@@ -20,9 +21,14 @@
 	text-transform: capitalize;
 	font-size: 1.1rem;
 	color: #fff;
-	background-color: var(--background-color-btn-normal);
+	background: #EC7979;
 	padding: 1rem 6.5rem;
 	margin-top: 4rem;
+	transition: all .1s ease-in-out;
+}
+
+.tabs__content-button:hover{
+	background: #AB4949;
 }
 
 .tabs__content-description {

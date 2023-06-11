@@ -9,7 +9,13 @@
     <link rel="stylesheet" href="./src/styles/section-header.css" />
     <link rel="stylesheet" href="./src/styles/awesome.css" />
     <link rel="stylesheet" href="./src/styles/tabs.css" />
-    <link rel="stylesheet" href="./src/styles/customers.css">
+    <link rel="stylesheet" href="./src/styles/customers.css" />
+    <link rel="stylesheet" href="./src/styles/design.css" />
+    <link rel="stylesheet" href="./src/styles/navigation.css" />
+    <link rel="stylesheet" href="./src/styles/banner.css" />
+    <link rel="stylesheet" href="./src/styles/social.css" />
+    <link rel="stylesheet" href="./src/styles/contact.css">
+    <link rel="stylesheet" href="./src/styles/footer.css">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -20,91 +26,235 @@
     <title>AXIT</title>
   </head>
   <body>
-    <section class="tabs">
+    <header class="header">
+      <img
+        class="navigation__logo"
+        src="./src/assests/images/logo.svg"
+        alt="logo"
+      />
+      <div class="container">
+        <nav class="navigation__menu">
+          <a href="#tabs" class="navigation__list-item">Features</a>
+          <a href="#awesome" class="navigation__list-item">About</a>
+          <a href="#pricing" class="navigation__list-item">Pricing</a>
+          <a href="#customers" class="navigation__list-item">Reviews</a>
+          <a href="#contact" class="navigation__list-item">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="main">
+      <section class="banner">
+        <div class="container banner-container">
+          <div class="banner-section-text-content">
+            <img
+              src="./src/assests/images/banner-logo.svg"
+              alt="Banner logo"
+              class="banner-section-logo"
+            />
+            <div class="section-header">
+              <h1 class="banner__title">
+                modern axure template<br />
+                for beautiful prototypes
+              </h1>
+              <div class="banner__line"></div>
+              <p class="banner__description">
+                Lorem ipsum dolor sit amet,<br />
+                consectetur adipiscing elit.
+              </p>
+            </div>
+            <button class="banner__button" type="button">Download</button>
+          </div>
+          <form name="banner__form-trial" action="" class="banner__form">
+            <h4 class="banner-form__title">
+              Try Your
+              <span class="banner-form__title--color-red">FREE</span> Trial
+              Today
+            </h4>
+            <fieldset class="banner-form-fieldset">
+              <label class="form-lable" for="banner-form__input-name">
+                <input
+                  class="form__input"
+                  autofocus
+                  type="text"
+                  placeholder="Name"
+                  id="banner-form__input-name"
+                  required
+                />
+              </label>
+
+              <label class="form-lable" for="banner-form__input-email">
+                <input
+                  class="form__input"
+                  autofocus
+                  type="email"
+                  placeholder="Email"
+                  id="banner-form__input-email"
+                  required
+                />
+              </label>
+
+              <label class="form-lable" for="banner-form__input-password">
+                <input
+                  class="form__input"
+                  autofocus
+                  type="password"
+                  placeholder="Password"
+                  id="banner-form__input-password"
+                  required
+                />
+              </label>
+            </fieldset>
+            <button class="banner-form__button">get started</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <section class="social">
+      <div class="container">
+        <div class="social-content">
+          <div class="social-content-text">
+            <p class="social__title">social media</p>
+            <p class="social__description">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br />
+              Aenean euismod bibendum laoreet.
+            </p>
+          </div>
+          <div class="social__icons-content">
+            <img
+              class="social__icons"
+              src="./src/assests/icons/facebook-icon.svg"
+              alt="facebook-icon"
+            />
+            <img
+              class="social__icons"
+              src="./src/assests/icons/twitter-icon.svg"
+              alt="twitter-icon"
+            />
+            <img
+              class="social__icons"
+              src="./src/assests/icons/linkedin-icon.svg"
+              alt="linkedin-icon"
+            />
+            <img
+              class="social__icons"
+              src="./src/assests/icons/pinterest-icon.svg"
+              alt="pinterest-icon"
+            />
+            <img
+              class="social__icons"
+              src="./src/assests/icons/instagram-icon.svg"
+              alt="instagram-icon"
+            />
+            <img
+              class="social__icons"
+              src="./src/assests/icons/github-icon.svg"
+              alt="github-icon"
+            />
+            <img
+              class="social__icons"
+              src="./src/assests/icons/rss-icon.svg"
+              alt="rss-icon"
+            />
+          </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="tabs" class="tabs">
       <div class="container">
         <fieldset class="tabs__dox">
           <legend class="tabs__legend">Tabs</legend>
           <input class="tabs__tab" id="tab_1" type="radio" name="tab" checked />
           <label class="tabs__tab-label" for="tab_1"> tab 1</label>
           <input class="tabs__tab" id="tab_2" type="radio" name="tab" />
-          <label class="tabs__tab-label" for="tab_2">
-            tab 2</label>
+          <label class="tabs__tab-label" for="tab_2"> tab 2</label>
           <input class="tabs__tab" id="tab_3" type="radio" name="tab" />
           <label class="tabs__tab-label" for="tab_3"> tab 3</label>
         </fieldset>
         <div class="tabs__content">
           <div class="tabs__content-text">
-            <h2 class="tabs__content-title">Tabs with soft transitioning effect.</h2>
+            <h2 class="tabs__content-title">
+              Tabs with soft transitioning effect.
+            </h2>
             <p class="tabs__content-description">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod
-              bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra
-              justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque
-              penatibus et magnis dis parturient montes.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
+              euismod bibendum laoreet. Proin gravida dolor sit amet lacus
+              accumsan et viverra justo commodo. Proin sodales pulvinar tempor.
+              Cum sociis natoque penatibus et magnis dis parturient montes.
               <br />
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod
-              bibendum laoreet.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
+              euismod bibendum laoreet.
             </p>
             <button class="tabs__content-button" type="button">download</button>
           </div>
-          <img class="tabs__content-image" src="./src/assests/images/statue-of-liberty.png"
-            alt="statue-of-liberty image" />
+          <img
+            class="tabs__content-image"
+            src="./src/assests/images/statue-of-liberty.png"
+            alt="statue-of-liberty image"
+          />
         </div>
+      </div>
     </section>
 
-    <section class="awesome">
-      <div class="container">
-        <div class="section__header">
-          <h2 class="section-header__title">why this is awesome</h2>
-          <div class="section-header__line"></div>
-          <p class="section-header__description">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-          </p>
-        </div>
-        <div class="awesome__content-box">
-          <div class="awesome__card">
-            <img
-              class="awesome__card-icon"
-              src="./src/assests/icons/bulb-icon.svg"
-              alt="bulb-icon"
-            />
-            <h3 class="awesome__card-title">Thoughtful Design</h3>
-            <p class="awesome__card-description">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
-              euismod bibendum laoreet. Proin gravida dolor sit amet lacus
-              accumsan et viverra.
+    <section id="awesome" class="awesome">
+      <div class="awesome">
+        <div class="container">
+          <div class="section__header">
+            <h2 class="section-header__title">why this is awesome</h2>
+            <div class="section-header__line"></div>
+            <p class="section-header__description">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
             </p>
           </div>
-          <div class="awesome__card">
-            <img
-              class="awesome__card-icon"
-              src="./src/assests/icons/keyboard-icon.svg"
-              alt="bulb-icon"
-            />
-            <h3 class="awesome__card-title">Thoughtful Design</h3>
-            <p class="awesome__card-description">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
-              euismod bibendum laoreet. Proin gravida dolor sit amet lacus
-              accumsan et viverra.
-            </p>
-          </div>
-          <div class="awesome__card">
-            <img
-              class="awesome__card-icon"
-              src="./src/assests/icons/lightning-icon.svg"
-              alt="bulb-icon"
-            />
-            <h3 class="awesome__card-title">Thoughtful Design</h3>
-            <p class="awesome__card-description">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
-              euismod bibendum laoreet. Proin gravida dolor sit amet lacus
-              accumsan et viverra.
-            </p>
+          <div class="awesome__content-box">
+            <div class="awesome__card">
+              <img
+                class="awesome__card-icon"
+                src="./src/assests/icons/bulb-icon.svg"
+                alt="bulb-icon"
+              />
+              <h3 class="awesome__card-title">Thoughtful Design</h3>
+              <p class="awesome__card-description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
+                euismod bibendum laoreet. Proin gravida dolor sit amet lacus
+                accumsan et viverra.
+              </p>
+            </div>
+            <div class="awesome__card">
+              <img
+                class="awesome__card-icon"
+                src="./src/assests/icons/keyboard-icon.svg"
+                alt="bulb-icon"
+              />
+              <h3 class="awesome__card-title">Thoughtful Design</h3>
+              <p class="awesome__card-description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
+                euismod bibendum laoreet. Proin gravida dolor sit amet lacus
+                accumsan et viverre.
+              </p>
+            </div>
+            <div class="awesome__card">
+              <img
+                class="awesome__card-icon"
+                src="./src/assests/icons/lightning-icon.svg"
+                alt="bulb-icon"
+              />
+              <h3 class="awesome__card-title">Thoughtful Design</h3>
+              <p class="awesome__card-description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
+                euismod bibendum laoreet. Proin gravida dolor sit amet lacus
+                accumsan et viverra.
+              </p>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="pricing">
+    <section id="pricing" class="pricing">
       <div class="container">
         <div class="section__header">
           <div class="section__header-text">
@@ -156,7 +306,7 @@
       </div>
     </section>
 
-    <section class="customers">
+    <section id="customers" class="customers">
       <div class="container">
         <div class="section__header">
           <h2 class="section-header__title">what our customers are saying</h2>
@@ -165,63 +315,182 @@
             Lorem ipsum dolor sit amet, consectetur adipiscing elit.
           </p>
         </div>
-        <div class="customers-section-list">
-          <div class="section-list__item">
+        <div class="customers__list">
+          <div class="customer-list__item">
             <p class="customers__comment">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit.
               Doloribus accusamus expedita repellat similique odio aspernatur
               ex, architecto eaque quo suscipit.
             </p>
-            <div class="section-item__customer">
+            <div class="customer__items">
               <img
-                class="section-item__customer-image"
+                class="customer__image"
                 src="./src/assests/images/davis-rhiel-madsen.png"
                 alt="Davis Rhiel Madsen"
               />
-              <div class="section-item__customer-text">
-                <h4 class="section-item__customer-name">Davis Rhiel Madsen</h4>
-                <p class="section-item__customer-post">Manager</p>
+              <div class="customer__text">
+                <h4 class="customer__name">Davis Rhiel Madsen</h4>
+                <p class="customer__post">Manager</p>
               </div>
             </div>
           </div>
-          <div class="section-list__item">
+          <div class="customer-list__item">
             <p class="customers__comment">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit.
               Doloribus accusamus expedita repellat similique odio aspernatur
               ex, architecto eaque quo suscipit.
             </p>
-            <div class="section-item__customer">
+            <div class="customer__items">
               <img
-                class="section-item__customer-image"
+                class="customer__image"
                 src="./src/assests/images/jaydon-rosser.png"
                 alt="Jaydon Rosser"
               />
-              <div class="section-item__customer-text">
-                <h4 class="section-item__customer-name">Jaydon Rosser</h4>
-                <p class="section-item__customer-post">Manager</p>
+              <div class="customer__text">
+                <h4 class="customer__name">Jaydon Rosser</h4>
+                <p class="customer__post">Manager</p>
               </div>
             </div>
           </div>
-          <div class="section-list__item">
-            <p class="customers-comment">
+          <div class="customer-list__item">
+            <p class="customers__comment">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit.
               Doloribus accusamus expedita repellat similique odio aspernatur
               ex, architecto eaque quo suscipit.
             </p>
-            <div class="section-item__customer">
+            <div class="customer__items">
               <img
-                class="section-item__customer-image"
+                class="customer__image"
                 src="./src/assests/images/cooper-dorwart.png"
                 alt="Cooper Dorwart"
               />
-              <div class="section-item__customer-text">
-                <h4 class="section-item__customer-name">Cooper Dorwart</h4>
-                <p class="section-item__customer-post">Manager</p>
+              <div class="customer__text">
+                <h4 class="customer__name">Cooper Dorwart</h4>
+                <p class="customer__post">Manager</p>
               </div>
             </div>
           </div>
         </div>
       </div>
     </section>
+
+    <section id="design" class="design">
+      <div
+        class="design__background design__background--background-color-black"
+      >
+        <div class="container">
+          <div class="section__header-design">
+            <h2 class="section-header-design__title">stylish axure design</h2>
+            <div class="section-header-design__line"></div>
+            <p class="section-header-design__description">
+              Use the sections you need, remove the ones you don't. Create
+              gorgeous prototypes faster than ever!
+            </p>
+          </div>
+          <button type="button" class="design__button">download</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <div class="container">
+        <div class="section__header">
+          <h2 class="section-header__title">contact us</h2>
+          <div class="section-header__line"></div>
+          <p class="section-header__description">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          </p>
+        </div>
+        <fieldset class="contact-form-fieldset">
+      <div class="contact-input-group">
+          <label class="form-lable" for="contact-form__input-name">
+            <input
+              class="form__input"
+              autofocus
+              type="text"
+              placeholder="Name"
+              id="contact-form__input-name"
+              required
+            />
+          </label>
+
+          <label class="form-lable" for="contact-form__input-email">
+            <input
+              class="form__input"
+              autofocus
+              type="email"
+              placeholder="Email"
+              id="contact-form__input-email"
+              required
+            />
+          </label>
+
+          <label class="form-lable" for="contact-form__input-password">
+            <input
+              class="form__input"
+              autofocus
+              type="password"
+              placeholder="Password"
+              id="contact-form__input-password"
+              required
+            />
+          </label>
+        </div>
+
+          <label class="form-lable" for="contact-form__textarea">
+            <textarea
+              class="form-textarea"
+              id="contact-form-textarea"
+              placeholder="Message"
+            ></textarea>
+          </label>
+        </fieldset>
+        <button class="contact-form__button">Send Message</button>
+      </form>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+      <div class="footer__icons-content">
+        <img
+          class="footer__icons"
+          src="./src/assests/icons/facebook-icon.svg"
+          alt="facebook-icon"
+        />
+        <img
+          class="footer__icons"
+          src="./src/assests/icons/twitter-icon.svg"
+          alt="twitter-icon"
+        />
+        <img
+          class="footer__icons"
+          src="./src/assests/icons/linkedin-icon.svg"
+          alt="linkedin-icon"
+        />
+        <img
+          class="footer__icons"
+          src="./src/assests/icons/pinterest-icon.svg"
+          alt="pinterest-icon"
+        />
+        <img
+          class="footer__icons"
+          src="./src/assests/icons/instagram-icon.svg"
+          alt="instagram-icon"
+        />
+        <img
+          class="footer__icons"
+          src="./src/assests/icons/github-icon.svg"
+          alt="github-icon"
+        />
+        <img
+          class="footer__icons"
+          src="./src/assests/icons/rss-icon.svg"
+          alt="rss-icon"
+        />
+      </div>
+      <p class="footer-copyright">© 2015 Axure Themes</p>
+    </div>
+    </footer>
   </body>
 </html>

@@ -1,5 +1,5 @@
 
-.customers-section-list {
+.customers__list {
     display: flex;
     column-gap: 2rem;
     margin-top: 2rem;
@@ -17,7 +17,7 @@
     color: #86878B;
 }
 
-.section-item__customers-comment::after{
+.customers__comment::after{
     content: '';
     position: absolute;
     left: 20%;
@@ -29,7 +29,7 @@
     border-top: 1.7rem solid #E2E2E2;
 }
 
-.section-item__customer{
+.customer__items{
     display: flex;
     column-gap: 2rem;
     align-items: flex-start;
@@ -37,12 +37,13 @@
 }
 
 
-.section-item__customer-name{
+.customer__name{
     margin-top: 1rem;
     font-size: 24px;
 }
 
-.section-item__customer-post{
+.customer__post{
     font-family: 'Raleway', sans-serif;
     margin-top: 1.5rem;
+    margin-bottom: 3rem;
 }

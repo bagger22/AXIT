@@ -1,0 +1,55 @@
+.section__header-design {
+    text-align: center;
+    padding-top: 100px;
+    z-index: 10; 
+}
+
+.section-header-design__title {
+    color: #fff;
+    font-size: 2.3rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-family: 'Raleway', sans-serif;
+}
+
+.section-header-design__line {
+    display: inline-block;
+    height: 1px;
+    width: 170px;
+    background-color: #fff;
+    margin-top: 2rem;
+}
+
+.section-header-design__description {
+    color: #ffffff;
+    font-size: 18px;
+    margin-top: 2rem;
+    font-family: 'Raleway', sans-serif;
+}
+
+.design__background{
+    background-image: url('/src/assests/images/design-background.png');
+    min-height: 442px;
+    background-position: center;
+    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.5);
+}
+
+.design__button{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 90px;
+    font-family: 'Open Sans', sans-serif;
+    text-transform: capitalize;
+    color: #fff;
+    font-size: 20px;
+    border: 2px solid #fff;
+    padding: 15px 150px;
+    cursor: pointer;
+    transition: all 0.1s ease-in-out;
+}
+
+.design__button:hover{
+    background-color: #000;
+    background-color: rgba(255, 255, 255, 0.2);
+}

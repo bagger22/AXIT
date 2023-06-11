@@ -4,6 +4,7 @@
 
 .awesome__card {
     display: inline-block;
+    margin-top: 30px;
     text-align: center;
     width: 33.3%;
     line-height: 1.5;
