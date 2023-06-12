@@ -54,6 +54,9 @@
     background-color: #EC7979;
 }
 
+.banner__button:hover{
+    border: 2px solid #EC7979;
+}
 
 .banner-container{
     display: flex;

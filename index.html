@@ -14,8 +14,8 @@
     <link rel="stylesheet" href="./src/styles/navigation.css" />
     <link rel="stylesheet" href="./src/styles/banner.css" />
     <link rel="stylesheet" href="./src/styles/social.css" />
-    <link rel="stylesheet" href="./src/styles/contact.css">
-    <link rel="stylesheet" href="./src/styles/footer.css">
+    <link rel="stylesheet" href="./src/styles/contact.css" />
+    <link rel="stylesheet" href="./src/styles/footer.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -27,11 +27,12 @@
   </head>
   <body>
     <header class="header">
-      <img
-        class="navigation__logo"
-        src="./src/assests/images/logo.svg"
-        alt="logo"
-      />
+      <a class="footer-icon-link" href="#banner">
+        <img
+          class="navigation__logo"
+          src="./src/assests/images/logo.svg"
+          alt="logo"
+      /></a>
       <div class="container">
         <nav class="navigation__menu">
           <a href="#tabs" class="navigation__list-item">Features</a>
@@ -44,7 +45,7 @@
     </header>
 
     <main class="main">
-      <section class="banner">
+      <section id="banner" class="banner">
         <div class="container banner-container">
           <div class="banner-section-text-content">
             <img
@@ -65,7 +66,7 @@
             </div>
             <button class="banner__button" type="button">Download</button>
           </div>
-          <form name="banner__form-trial" action="" class="banner__form">
+          <form name="banner__form-trial" class="banner__form">
             <h4 class="banner-form__title">
               Try Your
               <span class="banner-form__title--color-red">FREE</span> Trial
@@ -86,7 +87,6 @@
               <label class="form-lable" for="banner-form__input-email">
                 <input
                   class="form__input"
-                  autofocus
                   type="email"
                   placeholder="Email"
                   id="banner-form__input-email"
@@ -97,7 +97,6 @@
               <label class="form-lable" for="banner-form__input-password">
                 <input
                   class="form__input"
-                  autofocus
                   type="password"
                   placeholder="Password"
                   id="banner-form__input-password"
@@ -157,7 +156,6 @@
               src="./src/assests/icons/rss-icon.svg"
               alt="rss-icon"
             />
-          </div>
           </div>
         </div>
       </div>
@@ -402,95 +400,106 @@
           </p>
         </div>
         <fieldset class="contact-form-fieldset">
-      <div class="contact-input-group">
-          <label class="form-lable" for="contact-form__input-name">
-            <input
-              class="form__input"
-              autofocus
-              type="text"
-              placeholder="Name"
-              id="contact-form__input-name"
-              required
-            />
-          </label>
+          <div class="contact-input-group">
+            <label class="form-lable" for="contact-form__input-name">
+              <input
+                class="form__input"
+                type="text"
+                placeholder="Name"
+                id="contact-form__input-name"
+                required
+              />
+            </label>
 
-          <label class="form-lable" for="contact-form__input-email">
-            <input
-              class="form__input"
-              autofocus
-              type="email"
-              placeholder="Email"
-              id="contact-form__input-email"
-              required
-            />
-          </label>
+            <label class="form-lable" for="contact-form__input-email">
+              <input
+                class="form__input"
+                type="email"
+                placeholder="Email"
+                id="contact-form__input-email"
+                required
+              />
+            </label>
 
-          <label class="form-lable" for="contact-form__input-password">
-            <input
-              class="form__input"
-              autofocus
-              type="password"
-              placeholder="Password"
-              id="contact-form__input-password"
-              required
-            />
-          </label>
-        </div>
+            <label class="form-lable" for="contact-form__input-password">
+              <input
+                class="form__input"
+                type="password"
+                placeholder="Password"
+                id="contact-form__input-password"
+                required
+              />
+            </label>
+          </div>
 
           <label class="form-lable" for="contact-form__textarea">
             <textarea
               class="form-textarea"
-              id="contact-form-textarea"
+              id="contact-form__textarea"
               placeholder="Message"
             ></textarea>
           </label>
         </fieldset>
         <button class="contact-form__button">Send Message</button>
-      </form>
       </div>
     </section>
 
     <footer class="footer">
       <div class="container">
-      <div class="footer__icons-content">
-        <img
-          class="footer__icons"
-          src="./src/assests/icons/facebook-icon.svg"
-          alt="facebook-icon"
-        />
-        <img
-          class="footer__icons"
-          src="./src/assests/icons/twitter-icon.svg"
-          alt="twitter-icon"
-        />
-        <img
-          class="footer__icons"
-          src="./src/assests/icons/linkedin-icon.svg"
-          alt="linkedin-icon"
-        />
-        <img
-          class="footer__icons"
-          src="./src/assests/icons/pinterest-icon.svg"
-          alt="pinterest-icon"
-        />
-        <img
-          class="footer__icons"
-          src="./src/assests/icons/instagram-icon.svg"
-          alt="instagram-icon"
-        />
-        <img
-          class="footer__icons"
-          src="./src/assests/icons/github-icon.svg"
-          alt="github-icon"
-        />
-        <img
-          class="footer__icons"
-          src="./src/assests/icons/rss-icon.svg"
-          alt="rss-icon"
-        />
+        <address class="footer-address">
+          <div class="footer__icons-content">
+            <a class="footer-icon-link" href=""
+              ><img
+                class="footer__icons"
+                src="./src/assests/icons/facebook-icon.svg"
+                alt="facebook-icon"
+            /></a>
+
+            <a class="footer-icon-link" href=""
+              ><img
+                class="footer__icons"
+                src="./src/assests/icons/twitter-icon.svg"
+                alt="twitter-icon"
+            /></a>
+
+            <a class="footer-icon-link" href=""
+              ><img
+                class="footer__icons"
+                src="./src/assests/icons/linkedin-icon.svg"
+                alt="linkedin-icon"
+            /></a>
+
+            <a class="footer-icon-link" href="">
+              <img
+                class="footer__icons"
+                src="./src/assests/icons/pinterest-icon.svg"
+                alt="pinterest-icon"
+            /></a>
+
+            <a class="footer-icon-link" href="">
+              <img
+                class="footer__icons"
+                src="./src/assests/icons/instagram-icon.svg"
+                alt="instagram-icon"
+            /></a>
+
+            <a class="footer-icon-link" href="">
+              <img
+                class="footer__icons"
+                src="./src/assests/icons/github-icon.svg"
+                alt="github-icon"
+            /></a>
+
+            <a class="footer-icon-link" href="">
+              <img
+                class="footer__icons"
+                src="./src/assests/icons/rss-icon.svg"
+                alt="rss-icon"
+            /></a>
+          </div>
+          <p class="footer-copyright">© 2015 Axure Themes</p>
+        </address>
       </div>
-      <p class="footer-copyright">© 2015 Axure Themes</p>
-    </div>
     </footer>
   </body>
 </html>
