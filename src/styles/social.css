@@ -9,6 +9,7 @@
 }
 
 .social__title{
+    padding: 0.5rem;
     font-family: 'Open Sans', sans-serif;
     font-size: 2rem;
     text-transform: capitalize;
@@ -19,7 +20,7 @@
     font-family: 'Raleway', sans-serif;
     font-weight: 400;
     font-size: 18px;
-    margin-top: 3.5rem;
+    margin-top: 3rem;
 }
 
 .social__icons-content{

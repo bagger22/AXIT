@@ -83,6 +83,7 @@
 
 .form__input{
     display: flex;
+    padding: 0 14px;
     border: none;
     border-bottom: 1px solid #BDBDBD;
     min-width: 26rem;
@@ -112,6 +113,7 @@
 }
 
 .banner-form__button{
+    cursor: pointer;
     color: #fff;
     background: #EC7979;
     min-height: 4rem;
