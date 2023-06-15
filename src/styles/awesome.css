@@ -12,14 +12,14 @@
 
 .awesome__card-description {
     /* max-width: 370px; */
-    font-size: 18px;
+    font-size: 1.1rem;
     margin-bottom: 20px;
     font-family: 'Raleway', sans-serif;
 }
 
 .awesome__card-title {
     margin-bottom: 20px;
-    font-size: 24px;
+    font-size: 1.8rem;
     font-family: 'Open Sans', sans-serif;
 }   
 

@@ -19,11 +19,12 @@
 .social__description{
     font-family: 'Raleway', sans-serif;
     font-weight: 400;
-    font-size: 18px;
+    font-size: 1.1rem;
     margin-top: 3rem;
 }
 
 .social__icons-content{
     display: flex;
+    margin-top: 3rem;
     column-gap: 35px;
 }
