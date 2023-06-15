@@ -80,3 +80,15 @@
   .contact-form__button:active{
     background: #a55454;
   }
+
+  @media (max-width: 768px){
+    .contact-form-fieldset{
+      flex-wrap: wrap;
+    }
+
+    .contact-form-fieldset .form-textarea {
+      min-height: 10rem;
+      max-width: 24rem;
+      margin-top: 3rem;
+    }
+  }

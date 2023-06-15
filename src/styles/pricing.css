@@ -72,3 +72,21 @@
     -moz-box-shadow: 7px 10px 8px 0px rgba(34, 60, 80, 0.2);
     box-shadow: 7px 10px 8px 0px rgba(34, 60, 80, 0.2);
 }
+
+@media (max-width: 768px){
+    .pricing {
+        height: auto
+        }
+        
+    .pricing__cards-list {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 4rem;
+        height: auto;
+        }
+        
+    .pricing__card {
+        margin-left: 0;
+        margin-bottom: 3rem;
+        }
+}

@@ -28,3 +28,18 @@
     margin-top: 3rem;
     column-gap: 35px;
 }
+
+@media (max-width: 768px){
+    .social{
+        height: 20rem;
+    }
+
+    .social-content{
+        flex-wrap: wrap;
+    }
+
+    .social-content-text{
+        padding-top: 30px;
+        text-align: center;
+    }
+}

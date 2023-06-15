@@ -33,10 +33,11 @@
 }
 
 .tabs__content-description {
-	color: rgb(0 0 0 /1);
+	color: rgb(0, 0, 0);
 	font-size: 1rem;
 	line-height: 1.5;
 	margin-top: 4rem;
+	font-family: 'Raleway', sans-serif;
 }
 
 .tabs__content-image {
@@ -51,11 +52,13 @@
 }
 
 .tabs__content-title {
+	font-family: 'Open Sans', sans-serif;
 	font-size: 1.9rem;
 	margin-top: 4rem;
 }
 
 .tabs__dox {
+	display: flex;
 	border: none;
 	padding: 0;
 	margin: 0;
@@ -94,3 +97,30 @@
 	border-top-left-radius: 5px;
 	border-top-right-radius: 5px;
 }
+
+@media (max-width: 768px){
+	.tabs {
+		margin-top: 75px;
+	  }
+	  
+	.tabs__content-text{
+		min-width: 400px;
+	}
+
+
+	  .tabs__content {
+		padding-left: 2rem;
+		text-align: center;
+	  }
+	  
+	  .tabs__content-button {
+		font-size: 2rem;
+		padding: 1rem 7rem 1rem 7rem;
+		margin-top: 3rem;
+		margin-bottom: 2rem;
+	  }
+	  
+	  .tabs__content-image{
+		display: none;
+	  }
+	}

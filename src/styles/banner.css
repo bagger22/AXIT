@@ -132,7 +132,7 @@
     background: #a75454;
 }
 
-@media (max-width: 728px){
+@media (max-width: 768px){
     .banner .container{
     max-width: 728px;
     padding: 0 15px;
